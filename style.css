@@ -1,0 +1,138 @@
+body {
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+    background-color: #15191e;
+    color: #9299A5;
+}
+
+h2, h3 {
+    color: #14b8a6;
+}
+
+a {
+    text-decoration: none;
+    color: #9299A5;
+}
+
+.rede-social > a {
+    display: flex;
+    align-items: flex-start;
+    justify-items: flex-start;
+    gap: 5px;
+}
+
+header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: #1D232A;
+    border-radius: 7px;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2)
+
+}s
+
+.social {
+    width: 20px;
+    height: 20px;
+
+}
+
+.left-column {
+    float: left;
+    width: 25%;
+    padding-right: 20px;
+}
+
+.profissional-picture {
+    background-color: #14b8a6;
+    width: 100%;
+    padding: 2%;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.middle-column {
+    float: left;
+    width: 50%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.right-column {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    position: sticky;
+    top: 0;    
+}
+
+article {
+    background-color: #1D232A;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2)
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #1D232A;
+    margin-top: 20px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+main:after {
+    content: "";
+    display: table;
+    clear: both;    
+
+}
+
+.area-de-atuacao {
+    margin: 10px;
+    font-weight: bold;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+@media all and (max-width: 900px) {
+
+    .header {
+      font-size: 100%;
+    }
+
+    .left-column {
+      width: 100%;
+      padding-right: 0px;
+    }
+
+    .middle-column {
+      width: 100%;
+    }
+
+    .right-column {
+      width: 100%;
+      padding-left: 0px;
+    }
+
+}
+
+@keyframes rotate-image {
+ 60% {
+    transform: translateZ(-10px) rotateX(80deg) rotateZ(29deg) rotateY(-360deg) ;
+    }
+}
+
+#profissional-picture {
+    animation-name: rotate-image;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+}
